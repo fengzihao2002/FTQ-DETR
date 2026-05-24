@@ -516,12 +516,14 @@ The repository contains:
 - train/val/test split files;
 - dataset organization and reproduction instructions.
 
-The complete processed image datasets should be provided through the Release page of this repository:
+The complete processed image datasets used in the experiments are available from the Release page of this repository:
 
-```text
-SHEL5K_COCO6.zip
-SHWD_COCO.zip
-```
+https://github.com/fengzihao2002/FTQ-DETR/releases/tag/v1.0
+
+The release includes:
+
+- `SHEL5K_COCO6class.zip`: processed six-class SHEL5K dataset with train/val/test split of 3500/1000/500 images. The original `person` category was removed during conversion.
+- `SHWD_COCO.zip`: processed two-class SHWD dataset with train/val split of 6065/1516 images.
 
 After downloading and extracting the data archives, the expected final layout is:
 
@@ -531,11 +533,6 @@ data/SHEL5K_COCO6/val2017/
 data/SHEL5K_COCO6/test2017/
 data/SHWD_COCO/train2017/
 data/SHWD_COCO/val2017/
-```
-
-The annotation and split files in the repository should match the files included in the released dataset archives.
-
----
 
 ## 11. Citation
 
